@@ -1,1 +1,3 @@
 # gocoin
+
+@TODO: something to read...
