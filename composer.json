@@ -1,0 +1,14 @@
+{
+    "name": "evilfrog/gocoin",
+    "version": "0.0.1",
+    "require": {
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "^3.0"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {"psr-0": {"": "src"}}
+}
