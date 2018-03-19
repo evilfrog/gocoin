@@ -6,6 +6,8 @@ pipeline:
       - echo $SLACK
       - echo ${SLACK}
       - echo $${SLACK}
+    secrets: [ slack ]
+
 
   backend:
     image: php:7.2-cli-alpine
