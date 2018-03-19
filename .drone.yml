@@ -9,5 +9,6 @@ pipeline:
 
   notify:
     image: plugins/slack
-    channel: developers
+    webhook: $slackwebhook
+    channel: ops
     username: drone
