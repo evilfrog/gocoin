@@ -3,6 +3,10 @@ pipeline:
     image: php:7.2-cli-alpine
     commands:
       - ls -al .
+      - curl https://getcomposer.org/installer > composer-install.php
+      - php composer-install.php
+      - ls -al .
+      - composer install
       - php bin/phpspec run
 
   notify:
