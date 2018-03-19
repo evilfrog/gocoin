@@ -19,7 +19,7 @@ pipeline:
 
   notify:
     image: plugins/slack
-    webhook: $SLACK
+    webhook: $${SLACK}
     channel: ops
     username: drone
     secrets: [ slack ]
