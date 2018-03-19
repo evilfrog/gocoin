@@ -4,7 +4,7 @@ pipeline:
     commands:
       - curl https://getcomposer.org/installer > composer-install.php
       - php composer-install.php
-      - php composer.phar
+      - php composer.phar install
       - php bin/phpspec run
 
   notify:
