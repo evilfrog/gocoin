@@ -2,6 +2,7 @@ pipeline:
   backend:
     image: php:7.2-cli-alpine
     commands:
+      - ls -al .
       - php bin/phpspec run
 
   notify:
