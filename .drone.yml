@@ -1,20 +1,10 @@
 pipeline:
   backend:
-    image: golang
+    image: php:7.2-cli-alpine
     commands:
-      - go get
-      - go build
-      - go test
-
-  frontend:
-    image: node:6
-    commands:
-      - npm install
-      - npm test
+      - php bin/phpspec run
 
   notify:
     image: plugins/slack
     channel: developers
     username: drone
-    
-#test
