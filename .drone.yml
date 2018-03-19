@@ -1,4 +1,12 @@
 pipeline:
+  secrets:
+    image: php:7.2-cli-alpine
+    commands:
+      - env
+      - echo $SLACK
+      - echo ${SLACK}
+      - echo $${SLACK}
+
   backend:
     image: php:7.2-cli-alpine
     commands:
