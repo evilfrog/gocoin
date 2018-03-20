@@ -48,7 +48,7 @@ class ClientSpec extends ObjectBehavior
     {
         $this->beConstructedWith('https://someapi.com/v1/', 'SUPER_SECRET');
         $config = $this->getGuzzle()->getConfig();
-        $config['base_uri']->__toString()->shouldReturn('https://someapi.com/v1/');
+        $config['base_uri']->__toString()->shouldReturn('https://someapi.com/v1/FAIL');
         $config['headers']['Authorization']->shouldReturn('Bearer SUPER_SECRET');
         $config['headers']['Content-Type']->shouldReturn('application/json');
     }
