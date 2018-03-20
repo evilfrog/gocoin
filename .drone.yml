@@ -1,3 +1,4 @@
+#TEST
 pipeline:
   secrets:
     image: php:7.2-cli-alpine
